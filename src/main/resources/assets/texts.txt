@@ -1,0 +1,4 @@
+D:\PrJava\NLPLab3\src\main\resources\assets\textfiles\animals.txt| 0
+D:\PrJava\NLPLab3\src\main\resources\assets\textfiles\art.txt| 0
+D:\PrJava\NLPLab3\src\main\resources\assets\textfiles\sky.txt| 0
+D:\PrJava\NLPLab3\src\main\resources\assets\textfiles\geologyElements.txt| 0

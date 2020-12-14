@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="425.0" prefWidth="608.0" style="-fx-background-color: #50257a;" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.DeveloperController">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="608.0" style="-fx-background-color: #8296b3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <ImageView fitHeight="237.0" fitWidth="298.0" layoutX="300.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+               <image>
+                  <Image url="@../assets/imgfiles/dark_forest_by_sonnenradbanner.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="viewTaggedTextButton" layoutX="311.0" layoutY="325.0" mnemonicParsing="false" onAction="#showTaggedText" prefHeight="35.0" prefWidth="255.0" text="Show Tagged Text" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="270.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+          <Button fx:id="addButton" layoutX="20.0" layoutY="355.0" mnemonicParsing="false" onAction="#addText" prefHeight="35.0" prefWidth="255.0" text="Add The Text To The Corpus" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="270.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewTaggedVocabButton" layoutX="20.0" layoutY="76.0" mnemonicParsing="false" onAction="#showTaggedVocabulary" prefHeight="35.0" prefWidth="255.0" text="View Tagged Vocabulary" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="70.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewTagsButton" layoutX="20.0" layoutY="145.0" mnemonicParsing="false" onAction="#showTags" prefHeight="35.0" prefWidth="255.0" text="View Tag Table" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+          <Button fx:id="vocabularyButton" layoutX="20.0" layoutY="20.0" mnemonicParsing="false" onAction="#showVocabulary" prefHeight="35.0" prefWidth="255.0" text="View Vocabulary" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="statButton" layoutX="20.0" layoutY="209.0" mnemonicParsing="false" onAction="#showStatistics" prefHeight="35.0" prefWidth="255.0" text="show statistics" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="170.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewTextsBtn" layoutX="322.0" layoutY="260.0" mnemonicParsing="false" onAction="#showTexts" prefHeight="35.0" prefWidth="255.0" text="Show Texts" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="220.0">
+               <font>
+                  <Font name="Arial Black" size="15.0" />
+               </font>
+            </Button>
+            <ProgressBar fx:id="pb" layoutX="197.0" layoutY="336.0" prefHeight="21.0" prefWidth="233.0" progress="0.0" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="40.0" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-14.0" prefHeight="45.0" prefWidth="442.0" text="Choose The Action" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Colonna MT" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

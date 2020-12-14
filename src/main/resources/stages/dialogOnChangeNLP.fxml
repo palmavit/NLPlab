@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="250.0" maxWidth="400.0" minHeight="250.0" minWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AlertOnChange">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="labelChange" alignment="CENTER" contentDisplay="CENTER" prefHeight="200.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Book Antiqua Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="editViewButton" layoutX="30.0" layoutY="13.0" mnemonicParsing="false" onAction="#editView" text="Edit view" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="20.0" />
+            <Button fx:id="editDictionaryButton" layoutX="130.0" layoutY="13.0" maxWidth="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#editDictionary" prefWidth="100.0" scaleShape="false" text="Edit dictionary" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="110.0" />
+            <Button fx:id="cancelButton" layoutX="324.0" layoutY="13.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="20.0" />
+            <Button fx:id="editTextButton" layoutX="248.0" layoutY="13.0" maxWidth="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#editText" prefHeight="25.0" prefWidth="80.0" text="Edit text" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="235.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

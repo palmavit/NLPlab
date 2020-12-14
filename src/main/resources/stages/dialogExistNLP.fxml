@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="250.0" maxWidth="400.0" minHeight="250.0" minWidth="400.0" prefHeight="250.0" prefWidth="400.0" scaleShape="false" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AlertOnExist">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label fx:id="labelExist" alignment="CENTER" contentDisplay="CENTER" prefHeight="200.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <font>
+                        <Font name="Book Antiqua Bold" size="18.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane maxHeight="50.0" minHeight="50.0" prefHeight="50.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="addQuantityButton" layoutX="30.0" layoutY="13.0" mnemonicParsing="false" onAction="#addQuantity" prefHeight="30.0" prefWidth="120.0" text="add quantity" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="30.0">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelButton" layoutX="289.0" layoutY="15.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" text="cancel" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="30.0">
+               <font>
+                  <Font name="Century" size="14.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+    </children>
+</AnchorPane>

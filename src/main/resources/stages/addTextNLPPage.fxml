@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.TextAddController">
+    <children>
+        <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <tabs>
+            <Tab text="Quantity">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableQ" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="wordQ" prefWidth="301.0" text="word" />
+                            <TableColumn fx:id="quantityQ" prefWidth="294.0" text="quantity" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="searchWordBtnQ" layoutX="30.0" layoutY="332.0" mnemonicParsing="false" onAction="#searchWordQ" text="Search" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="30.0" />
+                        <TextField fx:id="wordFieldQ" layoutX="111.0" layoutY="332.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="110.0" />
+                        <RadioButton fx:id="beginQButton" layoutX="278.0" layoutY="336.0" mnemonicParsing="false" text="begin" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="280.0">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="groupQ" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="endQButton" layoutX="361.0" layoutY="336.0" mnemonicParsing="false" text="end" toggleGroup="$groupQ" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="350.0" />
+                        <RadioButton fx:id="containQButton" layoutX="429.0" layoutY="336.0" mnemonicParsing="false" selected="true" text="contain" toggleGroup="$groupQ" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="420.0" />
+                        <Button fx:id="saveButton" layoutX="534.0" layoutY="330.0" mnemonicParsing="false" onAction="#save" style="-fx-background-color: #ad4b6c;" text="SAVE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="20.0">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Tags    ">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tableT" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="wordT" prefWidth="182.0" text="word" />
+                            <TableColumn fx:id="tagsT" prefWidth="417.0" text="tags" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="searchWordBtnT" mnemonicParsing="false" onAction="#searchWordT" text="Search" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" />
+                        <TextField fx:id="wordFieldT" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="90.0" />
+                        <RadioButton fx:id="beginTButton" mnemonicParsing="false" text="begin" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="260.0">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="groupT" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="endTButton" mnemonicParsing="false" text="end" toggleGroup="$groupT" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="330.0" />
+                        <RadioButton fx:id="containTButton" mnemonicParsing="false" selected="true" text="contain" toggleGroup="$groupT" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="400.0" />
+                        <Button fx:id="deleteButton" layoutX="527.0" layoutY="331.0" mnemonicParsing="false" onAction="#delete" text="delete" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="30.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+                <Tab text="tag stat">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="tableTag" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="tagCol" prefWidth="302.0" text="tag" />
+                                        <TableColumn fx:id="quantTagCol" prefWidth="297.0" text="quantity" />
+                                    </columns>
+                                </TableView>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="bigramm stat">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="tableBigramm" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="bigrammCol" prefWidth="303.0" text="bigramm" />
+                                        <TableColumn fx:id="quantityBiCol" prefWidth="296.0" text="quantity" />
+                                    </columns>
+                                </TableView>
+                                <Button fx:id="searchBiButton" layoutX="28.0" layoutY="332.0" mnemonicParsing="false" onAction="#searchBigramms" prefHeight="30.0" prefWidth="80.0" text="Search" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="20.0">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <TextField fx:id="textBi" layoutX="113.0" layoutY="334.0" prefHeight="30.0" prefWidth="160.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="110.0" />
+                                <RadioButton fx:id="firstButton" layoutX="292.0" layoutY="338.0" mnemonicParsing="false" selected="true" text="first" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="290.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="groupFirstSecond" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="secondButton" layoutX="395.0" layoutY="338.0" mnemonicParsing="false" text="second" toggleGroup="$groupFirstSecond" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="360.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="pair stat">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TableView fx:id="tablePair" layoutX="7.0" prefHeight="371.0" prefWidth="600.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                    <columns>
+                                        <TableColumn fx:id="pairCol" prefWidth="300.0" text="pair" />
+                                        <TableColumn fx:id="quantityPairCol" prefWidth="299.0" text="quantity" />
+                                    </columns>
+                                </TableView>
+                                <Button fx:id="searchButton" layoutX="17.0" layoutY="332.0" mnemonicParsing="false" onAction="#searchBySymbols" prefHeight="30.0" prefWidth="69.0" text="Search" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Button>
+                                <RadioButton fx:id="beginButton" layoutX="197.0" layoutY="332.0" mnemonicParsing="false" text="begin" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="260.0">
+                                    <toggleGroup>
+                                        <ToggleGroup fx:id="buttonGroup" />
+                                    </toggleGroup>
+                                </RadioButton>
+                                <RadioButton fx:id="endButton" layoutX="272.0" layoutY="332.0" mnemonicParsing="false" text="end" toggleGroup="$buttonGroup" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="330.0" />
+                                <RadioButton fx:id="containButton" layoutX="110.0" layoutY="332.0" mnemonicParsing="false" selected="true" text="contains" toggleGroup="$buttonGroup" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="390.0" />
+                                <TextField fx:id="symbolField" layoutX="96.0" layoutY="328.0" prefHeight="30.0" prefWidth="153.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="100.0" />
+                                <RadioButton fx:id="tagButton" layoutX="470.0" layoutY="334.0" mnemonicParsing="false" text="tag" toggleGroup="$buttonGroup" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="470.0" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
